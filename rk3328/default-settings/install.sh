@@ -9,8 +9,8 @@ function setup_openwrt()
 
     sed -i 's/REJECT/ACCEPT/g' ./etc/config/firewall
 
-    sed -i '/collectd_thermal/{n;s/0/1/;}' ./etc/config/luci_statistics
-    sed -i '/collectd_uptime/{n;s/0/1/;}' ./etc/config/luci_statistics
+    [ -f ./etc/config/luci_statistics ] && sed -i '/collectd_thermal/{n;s/0/1/;}' ./etc/config/luci_statistics
+    [ -f ./etc/config/luci_statistics ] && sed -i '/collectd_uptime/{n;s/0/1/;}' ./etc/config/luci_statistics
 
     echo 'BTN_1 1 /sbin/reboot' >> ./etc/triggerhappy/triggers.d/example.conf
 
