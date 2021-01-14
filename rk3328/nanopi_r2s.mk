@@ -14,6 +14,7 @@ FRIENDLYWRT_PACKAGES+=(packages/pkg1)
 FRIENDLYWRT_PACKAGES+=(packages/pkg2)
 FRIENDLYWRT_FILES+=(device/friendlyelec/rk3328/default-settings)
 FRIENDLYWRT_FILES+=(device/friendlyelec/rk3328/common-files)
+FRIENDLYWRT_FILES+=(device/friendlyelec/rk3328/sd-update-tool)
 
 # U-boot
 # 
