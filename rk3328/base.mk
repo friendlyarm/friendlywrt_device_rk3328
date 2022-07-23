@@ -14,7 +14,6 @@ FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/feeds/luci/0001-fix-t
 FRIENDLYWRT_FILES+=(device/common/ntfs3)
 FRIENDLYWRT_FILES+=(device/common/default-settings)
 FRIENDLYWRT_FILES+=(device/common/emmc-tools)
-FRIENDLYWRT_FILES+=(device/common/busybox-top)
 FRIENDLYWRT_FILES+=(device/common/distfeeds)
 
 # U-boot
