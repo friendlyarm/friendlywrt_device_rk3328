@@ -10,7 +10,7 @@ TARGET_OSNAME=friendlywrt
 
 TARGET_FRIENDLYWRT_CONFIG=rockchip
 FRIENDLYWRT_SRC=friendlywrt
-FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/feeds/luci/0001-fix-to-make-factory-reset-button-work-on-FriendlyWrt.patch")
+FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/21.02/feeds/luci")
 FRIENDLYWRT_FILES+=(device/common/ntfs3)
 FRIENDLYWRT_FILES+=(device/common/default-settings)
 FRIENDLYWRT_FILES+=(device/common/emmc-tools)
