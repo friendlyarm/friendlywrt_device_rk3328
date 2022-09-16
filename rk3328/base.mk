@@ -12,9 +12,10 @@ TARGET_FRIENDLYWRT_CONFIG=rockchip
 FRIENDLYWRT_SRC=friendlywrt
 FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/22.03/feeds/luci")
 FRIENDLYWRT_FILES+=(device/common/ntfs3)
-FRIENDLYWRT_FILES+=(device/common/default-settings)
+FRIENDLYWRT_FILES+=(device/common/nft-fullcone)
 FRIENDLYWRT_FILES+=(device/common/emmc-tools)
 FRIENDLYWRT_FILES+=(device/common/distfeeds)
+FRIENDLYWRT_FILES+=(device/common/default-settings)
 
 # U-boot
 # 
