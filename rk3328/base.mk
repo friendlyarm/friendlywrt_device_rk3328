@@ -20,7 +20,7 @@ FRIENDLYWRT_FILES+=(device/common/default-settings)
 # U-boot
 # 
 
-TARGET_UBOOT_CONFIG=nanopi_r2_defconfig
+TARGET_UBOOT_CONFIG="nanopi_r2_defconfig friendlywrt.config"
 
 # Kernel
 # 
