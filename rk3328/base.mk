@@ -10,7 +10,8 @@ TARGET_OSNAME=friendlywrt
 
 TARGET_FRIENDLYWRT_CONFIG=rockchip
 FRIENDLYWRT_SRC=friendlywrt
-FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/22.03/feeds/luci")
+FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/23.05/feeds/luci")
+FRIENDLYWRT_PATCHS+=("feeds/packages/;device/common/src-patchs/23.05/feeds/packages")
 FRIENDLYWRT_FILES+=(device/common/ntfs3)
 FRIENDLYWRT_FILES+=(device/common/uas)
 FRIENDLYWRT_FILES+=(device/common/nft-fullcone)
@@ -33,6 +34,6 @@ TARGET_KERNEL_DTB=resource.img
 # 
 FRIENDLYWRT_ROOTFS=build_dir/target-aarch64_generic_musl/root-rockchip
 FRIENDLYWRT_PACKAGE_DIR=bin/targets/rockchip/armv8/packages
-TARGET_IMAGE_DIRNAME=friendlywrt22
-TARGET_SD_RAW_FILENAME=friendlywrt_22.03_$(date +%Y%m%d)_rk3328_arm64_sd.img
-TARGET_EFLASHER_RAW_FILENAME=friendlywrt_22.03_$(date +%Y%m%d)_rk3328_arm64_eflasher.img
+TARGET_IMAGE_DIRNAME=friendlywrt23
+TARGET_SD_RAW_FILENAME=friendlywrt_23.05_$(date +%Y%m%d)_rk3328_arm64_sd.img
+TARGET_EFLASHER_RAW_FILENAME=friendlywrt_23.05_$(date +%Y%m%d)_rk3328_arm64_eflasher.img
