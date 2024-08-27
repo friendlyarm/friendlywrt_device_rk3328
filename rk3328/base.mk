@@ -11,7 +11,6 @@ TARGET_OSNAME=friendlywrt
 TARGET_FRIENDLYWRT_CONFIG=rockchip
 FRIENDLYWRT_SRC=friendlywrt
 FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/23.05/feeds/luci")
-FRIENDLYWRT_PATCHS+=("feeds/packages/;device/common/src-patchs/23.05/feeds/packages")
 FRIENDLYWRT_FILES+=(device/common/ntfs3)
 FRIENDLYWRT_FILES+=(device/common/uas)
 FRIENDLYWRT_FILES+=(device/common/nft-fullcone)
