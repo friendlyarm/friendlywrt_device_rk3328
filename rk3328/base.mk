@@ -9,7 +9,7 @@ TARGET_OSNAME=friendlywrt
 #
 TARGET_FRIENDLYWRT_CONFIG=rockchip
 FRIENDLYWRT_SRC=friendlywrt
-FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/24.10/feeds/luci")
+FRIENDLYWRT_PATCHS+=("feeds/luci/;device/common/src-patchs/25.12/feeds/luci")
 FRIENDLYWRT_FILES+=(device/common/ntfs3)
 FRIENDLYWRT_FILES+=(device/common/pwm-fan)
 FRIENDLYWRT_FILES+=(device/common/uas)
@@ -30,15 +30,15 @@ TARGET_KERNEL_DTB=resource.img
 # Misc
 #
 ENABLE_OPT_PARTITION=true
-TARGET_ROOTFS_PARTSIZE=1024
-TARGET_USERDATA_PARTSIZE=1024
+TARGET_ROOTFS_PARTSIZE=1280
+TARGET_USERDATA_PARTSIZE=1536
 if [ "${ENABLE_OPT_PARTITION}" = "true" ]; then
-    TARGET_SD_IMAGESIZE=3000
+    TARGET_SD_IMAGESIZE=3584
 else
-    TARGET_SD_IMAGESIZE=1500
+    TARGET_SD_IMAGESIZE=1792
 fi
 FRIENDLYWRT_ROOTFS=build_dir/target-aarch64_generic_musl/root-rockchip
 FRIENDLYWRT_PACKAGE_DIR=bin/targets/rockchip/armv8/packages
-TARGET_IMAGE_DIRNAME=friendlywrt24
-TARGET_SD_RAW_FILENAME=friendlywrt_24.10_$(date +%Y%m%d)_rk3328_arm64_sd.img
-TARGET_EFLASHER_RAW_FILENAME=friendlywrt_24.10_$(date +%Y%m%d)_rk3328_arm64_eflasher.img
+TARGET_IMAGE_DIRNAME=friendlywrt25
+TARGET_SD_RAW_FILENAME=friendlywrt_25.12_$(date +%Y%m%d)_rk3328_arm64_sd.img
+TARGET_EFLASHER_RAW_FILENAME=friendlywrt_25.12_$(date +%Y%m%d)_rk3328_arm64_eflasher.img
